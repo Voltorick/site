@@ -1,0 +1,49 @@
+/* Box Model */
+
+	*, *:before, *:after {
+		-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+	}
+
+
+* {
+  padding: 0;
+  margin:  0;
+
+  font-family: 'PT Mono', monospace;
+  font-size: 18px;
+
+  color: #e6e1dc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body { background: #333; }
+
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.text      { color: #a5c261; }
+.title     { color: #ffc66d; }
+.keyword   { color: #c26230; }
+.variable  { color: #6d9cbe; }
+.variable2 { color: #d0d0ff; }
+.comment   { color: #808080; font-style: italic; font-weight: normal; }
+
+.text i { color: inherit; }
+
+a.text:hover  { color: #519f50; }
+a.title:hover { color: #bc9458; }
